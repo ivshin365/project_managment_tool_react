@@ -8,7 +8,7 @@ import AppBar from "../components/AppBar"
 
 
 
-export default function Home({ posts }){
+export default function Project({ posts }){
 
   const router = useRouter()
 
@@ -40,9 +40,9 @@ export default function Home({ posts }){
   return (
    <Layout>
     <AppBar/>
-<div className='flex items-center justify-center min-h-screen bg-gray-900'>
+<div className='flex items-center justify-center min-h-fit bg-gray-900'>
 	<div className='col-span-12'>
-    <h2 className="mb-10 text-left text-3xl font-bold tracking-tight text-white">
+    <h2 className="my-10 text-left text-3xl font-bold tracking-tight text-white">
               PNR 1000
             </h2>
   <a          onClick={() => newPost()}

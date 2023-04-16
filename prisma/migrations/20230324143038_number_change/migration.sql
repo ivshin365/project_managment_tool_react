@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Components" ALTER COLUMN "number" DROP NOT NULL,
+ALTER COLUMN "number" SET DATA TYPE TEXT;

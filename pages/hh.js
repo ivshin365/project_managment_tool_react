@@ -8,7 +8,7 @@ import AppBar from "../components/AppBar"
 
 
 
-export default function Home({ posts }){
+export default function hh({ posts }){
 
   const router = useRouter()
 
@@ -40,10 +40,10 @@ export default function Home({ posts }){
   return (
    <Layout>
     <AppBar/>
-<div className='flex items-center justify-center min-h-screen bg-gray-900'>
+<div className='flex items-center justify-center min-h-fit  bg-gray-900'>
 	<div className='col-span-12'>
-    <h2 className="mb-10 text-left text-3xl font-bold tracking-tight text-white">
-              PNR 1000
+    <h2 className="my-10 text-left text-3xl font-bold tracking-tight text-white">
+              HH2 
             </h2>
   <a          onClick={() => newPost()}
               href="/addPost"
@@ -126,7 +126,7 @@ export async function getServerSideProps() {
   // newest first
   const posts = await prisma.post.findMany({
     where: {
-      project: 'PNR1000',
+      project: 'HH',
     },
     orderBy: {
       createdAt: "desc",
