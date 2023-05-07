@@ -25,7 +25,7 @@ export default function Library({ comp }) {
 
     async function deleteComponent(id) {
         try {
-            fetch(`http://localhost:3000/api/components/${id}`, {
+            fetch(`/api/components/${id}`, {
                 headers: {
                     "Content-Type": "application/json",
                 },
@@ -39,11 +39,11 @@ export default function Library({ comp }) {
     }
 
     async function updateComponent(id) {
-        router.push(`http://localhost:3000/c/${id}`)
+        router.push(`/c/${id}`)
     }
 
     async function newComponent() {
-        router.push(`https://project-managment-tool.vercel.app/addpart`)
+        router.push(`/addpart`)
     }
 
     return (
