@@ -30,7 +30,7 @@ export default function Airborne({ posts }){
   }
 
   async function updatePost(id) {
-    router.push(`http://localhost:3000/p/${id}`)
+    router.push(`/p/${id}`)
   }
 
   async function newPost() {
@@ -46,7 +46,7 @@ export default function Airborne({ posts }){
               SOLAN
             </h2>
   <Link          onClick={() => newPost()}
-              href="/addpost"
+              href="/addPost"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Post New
