@@ -9,7 +9,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function addPost() {
+export default function AddPost() {
   const [name, setName] = useState('')
   const [serialNumber, setSerialNumber] = useState('')
   const [description, setDescription] = useState('')

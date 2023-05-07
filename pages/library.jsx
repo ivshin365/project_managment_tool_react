@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import Layout from '../components/Layout'
 import AppBar from "../components/AppBar"
 import { useState } from 'react'
+import Link from "next/link"
 
 
 
@@ -54,12 +55,15 @@ export default function Library({ comp }) {
                     <h2 className="my-10 text-left text-3xl font-bold tracking-tight text-white">
                         Component Library
                     </h2>
-                    <a onClick={() => newComponent()}
-                        href="/addpart"
-                        className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    <Link
+                    onClick={() => newComponent()}
+                    href="/addpart"
+                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
+                   
                         Add New Record
-                    </a>
+                    
+                    </Link>
                     <div className="mt-8 relative md:w-1/3">
 					<input onChange={(e) => setSearchedVal(e.target.value)} type="search"
 						className="w-full pl-10 pr-4 py-2 rounded-lg shadow focus:outline-none focus:shadow-outline text-gray-600 font-medium"
