@@ -8,7 +8,7 @@ import AppBar from "../components/AppBar"
 
 
 
-export default function wbn({ posts }){
+export default function Wbn({ posts }){
 
   const router = useRouter()
 

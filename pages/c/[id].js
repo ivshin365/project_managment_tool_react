@@ -6,7 +6,7 @@ import { GetServerSideProps } from 'next';
 import Layout from '../../components/Layout'
 
 
-export default function updateComponents(props) {
+export default function UpdateComponents(props) {
 
 
     const [name, setName] = useState(props.components.name)

@@ -6,7 +6,7 @@ import { GetServerSideProps } from 'next';
 import Layout from '../../components/Layout'
 
 
-export default function addPost(props) {
+export default function AddPost(props) {
 
 
   const [name, setName] = useState(props.posts.name)

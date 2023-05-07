@@ -8,7 +8,7 @@ import AppBar from "../components/AppBar"
 
 
 
-export default function airborne({ posts }){
+export default function Airborne({ posts }){
 
   const router = useRouter()
 
