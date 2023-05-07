@@ -3,7 +3,7 @@ import formatTimeAgo from "../utils/formatTimeAgo"
 import { useRouter } from 'next/router'
 import Layout from '../components/Layout'
 import AppBar from "../components/AppBar"
-
+import Link from "next/link"
 
 
 
