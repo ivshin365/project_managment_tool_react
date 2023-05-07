@@ -35,7 +35,7 @@ export default function Hh({ posts }){
   }
 
   async function newPost() {
-    router.push(`https://project-managment-tool.vercel.app/addpost`)
+    router.push(`https://project-managment-tool.vercel.app/addPost`)
   }
 
   return (
@@ -48,7 +48,7 @@ export default function Hh({ posts }){
             </h2>
             <Link        
               onClick={() => newPost()}
-              href="/addpost"
+              href="/addPost"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Post New
