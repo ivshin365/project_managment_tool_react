@@ -43,7 +43,7 @@ export default function Library({ comp }) {
     }
 
     async function newComponent() {
-        router.push(`http://localhost:3000/addpart`)
+        router.push(`https://project-managment-tool.vercel.app/addpart`)
     }
 
     return (
