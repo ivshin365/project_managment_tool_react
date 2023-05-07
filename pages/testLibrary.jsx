@@ -135,7 +135,7 @@ components.name
     }
 
     async function newComponent() {
-        router.push(`http://localhost:3000/addComponent`)
+        router.push(`http://localhost:3000/addcomponent`)
     }
 
 
@@ -156,7 +156,7 @@ components.name
                         Component Library
                     </h2>
                     <a onClick={() => newComponent()}
-                        href="/addComponent"
+                        href="/addcomponent"
                         className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
                         Add New Record

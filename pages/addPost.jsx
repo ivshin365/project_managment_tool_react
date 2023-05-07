@@ -1,23 +1,19 @@
 import { useState } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Switch } from '@headlessui/react'
 import axios from 'axios'
 import { useRouter } from "next/router";
 import Layout from '../components/Layout';
 
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
-export default function addPost() {
+
+export default function addpost() {
   const [name, setName] = useState('')
   const [serialNumber, setSerialNumber] = useState('')
   const [description, setDescription] = useState('')
   const [comments, setComments] = useState('')
   const [failStatus, setStatus] = useState('Completed')
   const [project, setProject] = useState('PNR1000')
-  const [route, setRoute] = useState()
+  
   
   
   const router = useRouter()

@@ -8,7 +8,7 @@ import AppBar from "../components/AppBar"
 
 
 
-export default function airborne({ posts }){
+export default function Vic({ posts }){
 
   const router = useRouter()
 
@@ -34,7 +34,7 @@ export default function airborne({ posts }){
   }
 
   async function newPost() {
-    router.push(`http://localhost:3000/addPost`)
+    router.push(`http://localhost:3000/addpost`)
   }
 
   return (
@@ -43,10 +43,10 @@ export default function airborne({ posts }){
 <div className='flex items-center justify-center min-h-fit bg-gray-900'>
 	<div className='col-span-12'>
     <h2 className="my-10 text-left text-3xl font-bold tracking-tight text-white">
-              AIRBORNE
+              VIC-IP
             </h2>
   <a          onClick={() => newPost()}
-              href="/addPost"
+              href="/addpost"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Post New
@@ -126,7 +126,7 @@ export async function getServerSideProps() {
   // newest first
   const posts = await prisma.post.findMany({
     where: {
-      project: 'AIRBORNE',
+      project: 'VIC-IP',
     },
     orderBy: {
       createdAt: "desc",
