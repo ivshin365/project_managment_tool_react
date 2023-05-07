@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 
 
 
-export default function Addpost() {
+export default function useAddpost() {
   const [name, setName] = useState('')
   const [serialNumber, setSerialNumber] = useState('')
   const [description, setDescription] = useState('')
