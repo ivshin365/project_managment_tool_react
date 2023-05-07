@@ -45,12 +45,12 @@ export default function Project({ posts }){
     <h2 className="my-10 text-left text-3xl font-bold tracking-tight text-white">
               PNR 1000
             </h2>
-  <a          onClick={() => newPost()}
+  <Link          onClick={() => newPost()}
               href="/addPost"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Post New
-            </a>
+            </Link>
 		<div className='overflow-auto lg:overflow-visible'>
 			<table className='table text-gray-400 border-separate space-y-6 text-sm'>
 				<thead className='bg-gray-800 text-gray-500'>
