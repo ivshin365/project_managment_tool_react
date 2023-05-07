@@ -14,10 +14,9 @@ export default function Hh({ posts }){
   const router = useRouter()
 
 
-
   async function deletePost(id) {
     try {
-     fetch(`http://localhost:3000/api/posts/${id}`, {
+     fetch(`/api/posts/${id}`, {
        headers: {
          "Content-Type": "application/json",
        },
@@ -31,7 +30,7 @@ export default function Hh({ posts }){
   }
 
   async function updatePost(id) {
-    router.push(`http://localhost:3000/p/${id}`)
+    router.push(`/p/${id}`)
   }
 
   async function newPost() {

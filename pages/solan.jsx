@@ -16,7 +16,7 @@ export default function Airborne({ posts }){
 
   async function deletePost(id) {
     try {
-     fetch(`http://localhost:3000/api/posts/${id}`, {
+     fetch(`/api/posts/${id}`, {
        headers: {
          "Content-Type": "application/json",
        },
