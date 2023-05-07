@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 
 
 
-export default function addComponent() {
+export default function useAddComponent() {
   const [name, setName] = useState('')
   const [serialNumber, setSerialNumber] = useState('')
   const [description, setDescription] = useState('')
