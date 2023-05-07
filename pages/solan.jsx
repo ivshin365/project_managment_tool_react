@@ -34,7 +34,7 @@ export default function Airborne({ posts }){
   }
 
   async function newPost() {
-    router.push(`https://project-managment-tool.vercel.app/addpost`)
+    router.push(`/addPost`)
   }
 
   return (
