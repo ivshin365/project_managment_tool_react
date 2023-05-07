@@ -34,7 +34,7 @@ export default function Hh({ posts }){
   }
 
   async function newPost() {
-    router.push(`http://localhost:3000/addpost`)
+    router.push(`https://project-managment-tool.vercel.app/addpost`)
   }
 
   return (
